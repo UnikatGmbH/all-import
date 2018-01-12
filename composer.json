@@ -1,0 +1,14 @@
+{
+    "name": "unikat/all-import",
+    "description": "All Import should  help migrating data from one database to another",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Konstantin Knopp",
+            "email": "k.knopp@das-unikat.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

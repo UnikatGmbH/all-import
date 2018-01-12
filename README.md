@@ -1,1 +1,2 @@
-# all-import
+## Laravel All Import
+[![Packagist License]]
