@@ -1,6 +1,6 @@
 {
     "name": "unikat/all-import",
-    "description": "All Import should  help migrating data from one database to another",
+    "description": "All Import should help migrating data from one database to another",
     "type": "library",
     "license": "MIT",
     "authors": [
