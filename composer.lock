@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a30c599c8efc5e5c93aa9c7941709a42",
+    "content-hash": "edbfeb0950ba2236a2e184fca3d64a88",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -2321,7 +2321,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2018-01-08T16:49:22+00:00"
+            "time": "2018-01-08 16:49:22"
         },
         {
             "name": "myclabs/deep-copy",
@@ -2427,7 +2427,7 @@
                 "orchestral",
                 "testing"
             ],
-            "time": "2018-01-10T06:07:10+00:00"
+            "time": "2018-01-10 06:07:10"
         },
         {
             "name": "orchestra/testbench-core",
@@ -2493,7 +2493,7 @@
                 "orchestral",
                 "testing"
             ],
-            "time": "2018-01-06T15:40:19+00:00"
+            "time": "2018-01-06 15:40:19"
         },
         {
             "name": "phar-io/manifest",
