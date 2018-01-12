@@ -5,3 +5,22 @@
 [![Build Status](https://travis-ci.org/UnikatGmbH/all-import.svg?branch=master)](https://travis-ci.org/UnikatGmbH/all-import)
 
 This package is aiming to simplify the data migration from one database to another.
+
+## Installation
+ Require this package with composer
+ 
+ ````
+ composer require unikat/all-import
+ ````
+ 
+This package requires Laravel 5.5, so it should be discovered automatically.
+
+## Config
+
+Publish the config with
+
+````
+php artisan vendor:publish
+````
+
+Then you choose the ServiceProvider "AllImportServiceProvider".
