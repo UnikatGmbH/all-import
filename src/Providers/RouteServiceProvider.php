@@ -24,8 +24,7 @@ class RouteServiceProvider extends ServiceProvider
         $router->group([
             'as' => 'all-import.',
             'prefix' => 'all-import',
-            'namespace' => $this->getNamespace(),
-            'middleware' => $this->getMiddleware()
+            'namespace' => $this->getNamespace()
         ], function() {
             $this->getRoutes();
         });
