@@ -12,5 +12,26 @@
     "minimum-stability": "dev",
     "require": {
         "maatwebsite/excel": "^2.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5",
+        "orchestra/testbench": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Unikat\\AllImport\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Unikat\\AllImport\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Unikat\\AllImport\\AllImportServiceProvider"
+            ]
+        }
     }
 }
