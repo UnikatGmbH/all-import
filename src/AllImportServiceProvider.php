@@ -4,6 +4,7 @@ namespace Unikat\AllImport;
 
 use Illuminate\Support\ServiceProvider;
 use Unikat\AllImport\Providers\RouteServiceProvider;
+use Unikat\AllImport\Providers\ViewServiceProvider;
 
 class AllImportServiceProvider extends ServiceProvider
 {
@@ -26,5 +27,6 @@ class AllImportServiceProvider extends ServiceProvider
         }
         
         $this->app->register(RouteServiceProvider::class);
+        $this->app->register(ViewServiceProvider::class);
     }
 }

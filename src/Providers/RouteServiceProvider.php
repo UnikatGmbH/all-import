@@ -23,7 +23,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         $router->group([
             'as' => 'all-import.',
-            'prefix' => config('all-import.route'),
+            'prefix' => 'all-import',
             'namespace' => $this->getNamespace(),
             'middleware' => $this->getMiddleware()
         ], function() {
