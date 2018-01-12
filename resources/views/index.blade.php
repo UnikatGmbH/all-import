@@ -9,9 +9,14 @@
     <link type="text/css" rel="stylesheet" href="{{ route('all-import.file', ['file' => 'materialize.min.css']) }}">
 </head>
 <body>
-<div id="app">
-    All Import
-</div>
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Logo</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+        </ul>
+    </div>
+</nav>
 <script type="text/javascript" src="{{ route('all-import.file', ['file' => 'materialize.min.js']) }}"></script>
 </body>
 </html>
