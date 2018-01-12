@@ -1,2 +1,3 @@
 ## Laravel All Import
-[![Packagist License]]
+
+This package is aiming to simplify the data migration from one database to another.
