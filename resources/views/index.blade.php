@@ -17,6 +17,31 @@
         </ul>
     </div>
 </nav>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h5 class="white-text">Footer Content</h5>
+            </div>
+            <div class="col s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a href="#" class="grey-text text-lighten-3">Link 1</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    &copy; Copyright Text
+                    <a href="#" class="grey-text text-lighten-4 right">More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 <script type="text/javascript" src="{{ route('all-import.file', ['file' => 'materialize.min.js']) }}"></script>
 </body>
 </html>
