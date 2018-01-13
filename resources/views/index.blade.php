@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="token" content="{{ csrf_token() }}">
-    <base href="{{ url(config_path('all-import.route.prefix')) . '/' }}">
+    <base href="{{ url(config('all-import.route.prefix')) . '/' }}">
     <link type="text/css" rel="stylesheet" href="{{ route('all-import.file', ['file' => 'materialize.min.css']) }}">
 </head>
 <body>
