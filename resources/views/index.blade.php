@@ -10,7 +10,7 @@
 </head>
 <body>
 <nav>
-    <div class="nav-wrapper">
+    <div class="nav-wrapper light-blue">
         <a href="#" class="brand-logo">Logo</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="#">Home</a></li>
@@ -31,7 +31,7 @@
             </div>
         </div>
     </div>
-    <div class="footer-copyright">
+    <div class="footer-copyright light-blue">
         <div class="container">
             <div class="row">
                 <div class="col s12">
