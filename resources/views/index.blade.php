@@ -17,7 +17,7 @@
         </ul>
     </div>
 </nav>
-<footer class="page-footer">
+<footer class="page-footer light-blue">
     <div class="container">
         <div class="row">
             <div class="col s12">
@@ -31,7 +31,7 @@
             </div>
         </div>
     </div>
-    <div class="footer-copyright light-blue">
+    <div class="footer-copyright">
         <div class="container">
             <div class="row">
                 <div class="col s12">
