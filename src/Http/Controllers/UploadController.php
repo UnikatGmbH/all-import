@@ -1,15 +1,15 @@
 <?php
 
-namespace Unikat\AllImport\Http;
+namespace Unikat\AllImport\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Unikat\AllImport\Http\Controllers\Controller;
 
 class UploadController extends Controller
 {
     
     public function upload(Request $request)
     {
-        return $request->file();
+        return $request->file->storeAs('', $request->file->getClientOriginalName(), 'local');
+        
     }
 }
