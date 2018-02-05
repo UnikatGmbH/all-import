@@ -17,6 +17,11 @@
         </ul>
     </div>
 </nav>
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
 <footer class="page-footer light-blue">
     <div class="container">
         <div class="row">
@@ -42,6 +47,7 @@
         </div>
     </div>
 </footer>
+<script type="text/javascript" src="{{ route('all-import.file', ['file' => 'jquery.min.js']) }}"></script>
 <script type="text/javascript" src="{{ route('all-import.file', ['file' => 'materialize.min.js']) }}"></script>
 </body>
 </html>
