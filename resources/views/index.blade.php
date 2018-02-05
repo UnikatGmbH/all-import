@@ -9,44 +9,26 @@
     <link type="text/css" rel="stylesheet" href="{{ route('all-import.file', ['file' => 'package.css']) }}">
 </head>
 <body>
-<nav>
-    <div class="nav-wrapper light-blue">
-        <a href="#" class="brand-logo">Logo</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#">Home</a></li>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="app">
+    <a href="#" class="navbar-brand">All Import</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main__navbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main__navbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a href="#" class="nav-link">Index</a>
+            </li>
         </ul>
     </div>
 </nav>
 <div class="container">
     <div class="row">
-        <div class="col"></div>
+        <div class="col mt-5">
+            <dropzone></dropzone>
+        </div>
     </div>
 </div>
-<footer class="page-footer light-blue">
-    <div class="container">
-        <div class="row">
-            <div class="col s12">
-                <h5 class="white-text">Footer Content</h5>
-            </div>
-            <div class="col s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                    <li><a href="#" class="grey-text text-lighten-3">Link 1</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="footer-copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col s12">
-                    &copy; Copyright Text
-                    <a href="#" class="grey-text text-lighten-4 right">More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
 <script type="text/javascript" src="{{ route('all-import.file', ['file' => 'manifest.js']) }}"></script>
 <script type="text/javascript" src="{{ route('all-import.file', ['file' => 'vendor.js']) }}"></script>
 <script type="text/javascript" src="{{ route('all-import.file', ['file' => 'package.js']) }}"></script>
