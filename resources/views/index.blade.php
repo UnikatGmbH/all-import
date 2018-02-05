@@ -9,7 +9,7 @@
     <link type="text/css" rel="stylesheet" href="{{ route('all-import.file', ['file' => 'package.css']) }}">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light" id="app">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a href="#" class="navbar-brand">All Import</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main__navbar">
         <span class="navbar-toggler-icon"></span>
@@ -22,7 +22,7 @@
         </ul>
     </div>
 </nav>
-<div class="container">
+<div class="container" id="app">
     <div class="row">
         <div class="col mt-5">
             <dropzone></dropzone>

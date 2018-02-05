@@ -8,6 +8,11 @@ $router->get('/', [
     'uses' => 'MainController@index'
 ]);
 
+$router->post('upload', [
+    'as' => 'upload',
+    'uses' => 'UploadController@upload'
+]);
+
 $router->group(['prefix' => 'assets'], function ($router) {
     $filePattern = '^([a-z0-9_\-\.]+)$';
 
