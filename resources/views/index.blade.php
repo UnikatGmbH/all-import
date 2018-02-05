@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="token" content="{{ csrf_token() }}">
     <base href="{{ url(config('all-import.route.prefix')) . '/' }}">
-    <link type="text/css" rel="stylesheet" href="{{ route('all-import.file', ['file' => 'materialize.min.css']) }}">
+    <link type="text/css" rel="stylesheet" href="{{ route('all-import.file', ['file' => 'package.css']) }}">
 </head>
 <body>
 <nav>
@@ -47,7 +47,8 @@
         </div>
     </div>
 </footer>
-<script type="text/javascript" src="{{ route('all-import.file', ['file' => 'jquery.min.js']) }}"></script>
-<script type="text/javascript" src="{{ route('all-import.file', ['file' => 'materialize.min.js']) }}"></script>
+<script type="text/javascript" src="{{ route('all-import.file', ['file' => 'manifest.js']) }}"></script>
+<script type="text/javascript" src="{{ route('all-import.file', ['file' => 'vendor.js']) }}"></script>
+<script type="text/javascript" src="{{ route('all-import.file', ['file' => 'package.js']) }}"></script>
 </body>
 </html>
