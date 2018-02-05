@@ -9,7 +9,7 @@ class UploadController extends Controller
     
     public function upload(Request $request)
     {
-        return $request->file->storeAs('', $request->file->getClientOriginalName(), 'local');
+        return $request->file->storeAs('all-import', $request->file->getClientOriginalName(), 'local');
         
     }
 }
