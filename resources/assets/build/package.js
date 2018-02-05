@@ -15591,7 +15591,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 				url: "/all-import/upload",
 				thumbnailWidth: 150,
 				maxFilesize: 0.5,
-				headers: { "My-Awesome-Header": "header value" }
+				headers: { "My-Awesome-Header": "header value" },
+				init: function init() {
+					this.on('success', function (file) {
+						window.reload();
+					});
+				}
 			}
 		};
 	}
