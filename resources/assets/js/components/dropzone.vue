@@ -15,7 +15,7 @@
 		data:       function() {
 			return {
 				dropzoneOptions: {
-					url:            "https://httpbin.org/post",
+					url:            "/all-import/upload",
 					thumbnailWidth: 150,
 					maxFilesize:    0.5,
 					headers:        {"My-Awesome-Header": "header value"}
