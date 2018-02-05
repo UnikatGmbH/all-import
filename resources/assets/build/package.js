@@ -15594,7 +15594,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 				headers: { "My-Awesome-Header": "header value" },
 				init: function init() {
 					this.on('success', function (file) {
-						window.reload();
+						location.reload();
 					});
 				}
 			}

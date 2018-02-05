@@ -21,7 +21,7 @@
 					headers:        {"My-Awesome-Header": "header value"},
                     init: function() {
 						this.on('success', function(file) {
-							window.reload();
+							location.reload();
                         });
                     }
 				}
