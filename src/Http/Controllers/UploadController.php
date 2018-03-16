@@ -17,6 +17,5 @@ class UploadController extends Controller
         }
     
         return $request->file->storeAs('all-import', $fileName, 'local');
-        
     }
 }
