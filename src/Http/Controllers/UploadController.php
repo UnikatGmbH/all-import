@@ -2,20 +2,30 @@
 
 namespace Unikat\AllImport\Http\Controllers;
 
+use Carbon\Carbon;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 
 class UploadController extends Controller
 {
     
     public function upload(Request $request)
     {
-        $fileName = $request->file->getClientOriginalName();
+        if($request->hasFile('file')) {
+            $fileParts     = explode('.', $request->file->getClientOriginalName());
+            $fileExtension = strtolower($request->file->getClientOriginalExtension());
     
-        if(Storage::exists('all-import/' . $request->file->getClientOriginalName())) {
-            $fileName = '2_' . $fileName; // TODO: es muss für jede vorhandene Datei mit gleichen Namen hochgezählt werden
+            if (count($fileParts) <= 2) {
+                $fileName = strtolower($fileParts[0]);
+            } else {
+                array_pop($fileParts);
+                $fileName = implode('.', $fileParts);
+            }
+    
+            $now = Carbon::now()->format('Ymdhis');
+    
+            $file = $fileName . '_' . $now . '.' . $fileExtension;
+    
+            return $request->file->storeAs('all-import', $file, 'local');
         }
-    
-        return $request->file->storeAs('all-import', $fileName, 'local');
     }
 }

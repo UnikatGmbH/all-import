@@ -17,13 +17,16 @@
 				dropzoneOptions: {
 					url:            "/all-import/upload",
 					thumbnailWidth: 150,
-					maxFilesize:    0.5,
-					headers:        {"My-Awesome-Header": "header value"},
-                    init: function() {
-						this.on('success', function(file) {
+					maxFilesize:    500,
+					init:           function() {
+						this.on("success", function(file, response) {
 							location.reload();
-                        });
-                    }
+						});
+						this.on("error", function(response, message) {
+							console.log(response);
+							console.log(message);
+						})
+					}
 				}
 			}
 		}
