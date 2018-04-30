@@ -10,6 +10,6 @@ class RoutingTest extends TestCase
     {
         $response = $this->get('/all-import');
         
-        $response->assertSee('all-import');
+        $response->assertSee('All Import');
     }
 }
