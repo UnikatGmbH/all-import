@@ -13,6 +13,11 @@ $router->post('/upload', [
     'uses' => 'UploadController@upload',
 ]);
 
+$router->get('/select-table', [
+    'as'   => 'select-table',
+    'uses' => 'FileController@selectTable',
+]);
+
 $router->get('/{file}', [
     'as'   => 'file-details',
     'uses' => 'FileController@index',

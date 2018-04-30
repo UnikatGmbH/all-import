@@ -10,12 +10,20 @@ use League\Csv\Statement;
 class FileController extends Controller
 {
     
-    public function index($fileName)
+    public function selectTable(Request $request)
     {
-        $tables = DB::select('SHOW TABLES');
-        dd($tables);
-        dd(DB::getDatabaseName());
+        $file = $request->file;
+        $dbName = DB::getDatabaseName();
+        foreach(DB::select('SHOW TABLES') as $table) {
+            $property = 'Tables_in_' . $dbName;
+            $tables[] = $table->$property;
+        }
         
+        return view('all-import::select-table', compact('tables', 'file'));
+    }
+    
+    public function index(Request $request, $fileName)
+    {
         $path = storage_path('app/all-import/' . $fileName);
         $csv  = Reader::createFromPath($path);
         $csv->setHeaderOffset(0);
@@ -24,7 +32,7 @@ class FileController extends Controller
         $records = $stmt->process($csv);
         
         $fields       = $records->getHeader();
-        $remoteFields = DB::getSchemaBuilder()->getcolumnListing('companies');
+        $remoteFields = DB::getSchemaBuilder()->getcolumnListing($request->table);
         
         return view('all-import::file', compact('fields', 'remoteFields', 'path'));
     }

@@ -26,7 +26,7 @@ class UploadController extends Controller
             $file = $fileName . '_' . $now . '.' . $fileExtension;
     
             $request->file->storeAs('all-import', $file, 'local');
-            
+    
             return $file;
         }
     }

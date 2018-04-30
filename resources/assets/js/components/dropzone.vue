@@ -21,8 +21,7 @@
                     acceptedFiles: ".xml, .csv",
 					init:           function() {
 						this.on("success", function(file, response) {
-							window.location.href = "/all-import/" + response;
-							// location.reload();
+							window.location.href = "/all-import/select-table?file=" + response;
 						});
 						this.on("error", function(response, message) {
 							console.log(response);
