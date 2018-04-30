@@ -1,6 +1,6 @@
 {
     "/resources/assets/build/package.js": "/resources/assets/build/package.js",
-    "/esources/assets/build/package.css": "/esources/assets/build/package.css",
     "/resources/assets/build/vendor.js": "/resources/assets/build/vendor.js",
-    "/resources/assets/build/manifest.js": "/resources/assets/build/manifest.js"
+    "/resources/assets/build/manifest.js": "/resources/assets/build/manifest.js",
+    "/esources/assets/build/package.css": "/esources/assets/build/package.css"
 }

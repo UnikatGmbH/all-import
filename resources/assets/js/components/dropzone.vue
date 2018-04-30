@@ -18,9 +18,11 @@
 					url:            "/all-import/upload",
 					thumbnailWidth: 150,
 					maxFilesize:    500,
+                    acceptedFiles: ".xml, .csv",
 					init:           function() {
 						this.on("success", function(file, response) {
-							location.reload();
+							window.location.href = "/all-import/" + response;
+							// location.reload();
 						});
 						this.on("error", function(response, message) {
 							console.log(response);

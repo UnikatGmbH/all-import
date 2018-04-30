@@ -1,0 +1,25 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~jquery-ui/themes/base/draggable.css";
+
+.inner-columns {
+    margin-left: 20px;
+}
+
+.inner-columns {
+    position: relative;
+    z-index: 0;
+}
+
+.draggable {
+    z-index: 999999;
+    display: inline-block;
+}
+
+input.droppable {
+    position: relative;;
+    z-index: 1;
+}
+
+.bg-blue {
+    background-color: blue;
+}

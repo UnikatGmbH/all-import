@@ -18,6 +18,11 @@ $router->get('/{file}', [
     'uses' => 'FileController@index',
 ]);
 
+$router->post('/insert', [
+    'as'   => 'insert',
+    'uses' => 'FileController@insert',
+]);
+
 $router->group(['prefix' => 'assets'], function ($router) {
     $filePattern = '^([a-z0-9_\-\.]+)$';
     
